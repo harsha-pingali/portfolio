@@ -5,27 +5,27 @@ import { PiFinnTheHumanFill } from "react-icons/pi";
 import { GiNinjaHeroicStance } from "react-icons/gi";
 const Header = () => {
     const [bar, setBar] = useState(false);
-  return (
-    <Container bar={bar}>
-        <Logo>
-            <span className='green'><GiNinjaHeroicStance/></span>
-            <h1>Sai Harsha</h1>
-        </Logo>
-        <Nav bar={bar}>
-            <span><a href="#home">Home</a></span>
-            <span><a href="#skills">Skills</a></span>
-             <span><a href="#tools">Tools</a></span>
-            <span><a href="#project">Projects</a></span>
-            <span><a href="#certifications">Certifications</a></span>
-            <span><a href="#footer">Portfolio</a></span>
-        </Nav>
-        <div
-        onClick={() => setBar(!bar)}
-        className="bars">
-            <div className="bar"></div>
-        </div>
-    </Container>
-  )
+    return (
+        <Container bar={bar}>
+            <Logo>
+                <span className='green'><GiNinjaHeroicStance /></span>
+                <h1>Sai Harsha</h1>
+            </Logo>
+            <Nav bar={bar}>
+                <span><a href="#home">Home</a></span>
+                <span><a href="#skills">Skills</a></span>
+                <span><a href="#tools">Tools</a></span>
+                <span><a href="#project">Projects</a></span>
+                <span><a href="#certifications">Certifications</a></span>
+                <span><a href="#footer">Contact Me</a></span>
+            </Nav>
+            <div
+                onClick={() => setBar(!bar)}
+                className="bars">
+                <div className="bar"></div>
+            </div>
+        </Container>
+    )
 }
 
 export default Header
@@ -101,7 +101,7 @@ const Nav = styled.div`
         position: fixed;
         display: flex;
         flex-direction: column;
-        background-color: #01be96;
+        background-color: #0fa5e1;
         inset: 0;
         justify-content: center;
         align-items: center;

@@ -8,14 +8,14 @@ const Tools = () => {
     <Container id="tools">
       <Slide direction="left">
         <h1>
-          <span className="green">Languages , Tools &  Frameworks</span>
+          <span className="green">Languages , Tools , Libraries &  Frameworks</span>
         </h1>
         <h3>that i work with</h3>
         <Cards>
-          <CardSection/>
+          <CardSection />
         </Cards>
       </Slide>
-      </Container>
+    </Container>
   )
 }
 const Container = styled.div`

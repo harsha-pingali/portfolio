@@ -13,10 +13,10 @@ const Services = () => {
   return (
     <Container id="skills">
       <Slide direction="down">
-        <h4>
+        <h1>
           My <span className="green">Skill Set</span>
-        </h4>
-        <h1>I Work on</h1>
+        </h1>
+        <h4>I Work on</h4>
       </Slide>
       <Cards>
         <Slide direction="left">
