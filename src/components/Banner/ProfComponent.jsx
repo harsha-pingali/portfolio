@@ -1,12 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import { AiOutlineInstagram } from "react-icons/ai";
-import { GiEarthAmerica } from "react-icons/gi";
-import { FaLinkedinIn } from "react-icons/fa";
 import { Slide } from "react-awesome-reveal";
 import { IoDocumentText } from "react-icons/io5";
 import { BsInstagram } from "react-icons/bs";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
+import '../../index.css'
 const ProfComponent = () => {
   return (
     <Container id="home">
@@ -16,12 +14,12 @@ const ProfComponent = () => {
             Hello <span className="green">I'am</span>
           </h4>
           <h1 className="green">Sai Harsha</h1>
-          <h3>Web Developer and Cloud Computing Enthusiast</h3>
-          <p>
-            Hello, I'm Sai Harsha, and I'm deeply passionate about both web development and cloud computing. My enthusiasm lies in applying theoretical knowledge to real-world applications in these fields. I'm eager to bridge the gap between theory and practice by actively engaging in hands-on projects.Currently I am looking for oppertunities to showcase my skills
+          <h3>Passionate about web development and enthusiastic about cloud computing</h3>
+          <p className="comic-neue-regular">
+            Hello, I'm Sai Harsha, and I'm deeply passionate about both  <strong>web development</strong> and  <strong>cloud computing</strong>. My enthusiasm lies in applying theoretical knowledge to real-world applications in these fields. I'm eager to bridge the gap between theory and practice by actively engaging in hands-on projects. Currently I am looking for oppertunities to showcase my skills
           </p>
 
-          <a href="https://drive.google.com/file/d/1WyYoVCCrXOWTW53ixUU6GVKFBc2hIRfj/view?usp=drive_link" target="_blank">
+          <a href="https://drive.google.com/file/d/1evDwtN1iH34uTWEb1-aXwc4GAhPl92DT/view?usp=sharing" target="_blank" rel="noreferrer">
             <button>View My Resume <IoDocumentText style={{ fontSize: "20px" }} /> </button>
           </a>
           <Social>

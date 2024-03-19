@@ -1,15 +1,15 @@
 import React from 'react'
 import styled from 'styled-components';
-
+import '../../index.css'
 const Card = (props) => {
     const { Icon, disc, title } = props;
-  return (
-    <Container>
-        <span className='green'><Icon/></span>
-        <h1>{title}</h1>
-        <p>{disc}</p>
-    </Container>
-  )
+    return (
+        <Container>
+            <span className='green'><Icon /></span>
+            <h1>{title}</h1>
+            <p className='comic-neue-regular'>{disc}</p>
+        </Container>
+    )
 }
 
 export default Card;

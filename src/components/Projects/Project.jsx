@@ -4,30 +4,30 @@ import ProjectModal from '../utils/ProjectModal';
 import { Button } from 'antd';
 
 const Project = (props) => {
-    const { img, disc,name,...rest} = props.item;
+    const { id, img, disc, name, ...rest } = props.item;
     // console.log(rest)
-    const [open,setOpen] = useState(false);
-    const handleCancel = ()=>{
+    const [open, setOpen] = useState(false);
+    const handleCancel = () => {
         setOpen(false)
     }
-    const handleOk = ()=>{
+    const handleOk = () => {
         setOpen(true)
     }
 
-  return (
-    <Container className='project'>
-        <img src={img} alt="project" />
-        <div className="disc">
-            <h1>{name}</h1>
-            {/* <p>{disc}</p> */}
-            {/* <a href={link} target='_blank'>demo</a> */}
-            <div className='d-flex row justify-content-center align-items-center'>
-            <Button onClick={()=>handleOk()} size='small' style={{marginLeft:"0.4rem"}} >View More</Button>
+    return (
+        <Container className='project'>
+            <img src={img} alt="project" />
+            <div className="disc" key={id}>
+                <h1>{name}</h1>
+                {/* <p>{disc}</p> */}
+                {/* <a href={link} target='_blank'>demo</a> */}
+                <div className='d-flex row justify-content-center align-items-center'>
+                    <Button onClick={() => handleOk()} size='small' style={{ marginLeft: "0.4rem" }} >View More</Button>
+                </div>
+                <ProjectModal open={open} handleCancel={handleCancel} handleOk={handleOk} data={disc} title={name} rest={rest} />
             </div>
-            <ProjectModal open={open} handleCancel={handleCancel} handleOk={handleOk} data={disc} title={name} rest={rest}/>
-        </div>
-    </Container>
-  )
+        </Container>
+    )
 }
 
 export default Project;

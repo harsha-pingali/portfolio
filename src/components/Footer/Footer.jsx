@@ -4,12 +4,11 @@ import { MdAlternateEmail } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from "react-icons/ai";
-import { BsFacebook, BsSlack, BsInstagram } from "react-icons/bs";
-import { FiMail, FiPhoneCall } from "react-icons/fi";
+import { BsInstagram } from "react-icons/bs";
+import { FiMail } from "react-icons/fi";
 import { Slide, Zoom, Fade } from "react-awesome-reveal";
 import { ToastContainer, toast } from 'react-toastify';
 import { Spin } from 'antd';
-import { IoIosSend } from "react-icons/io";
 import 'react-toastify/dist/ReactToastify.css';
 // import sendMail from "../mails/mailService.js";
 import React, { useRef } from 'react';
@@ -94,25 +93,11 @@ const Footer = () => {
           <h1>Contact Me </h1>
         </Slide>
         <div className="address">
-          {/* <Slide direction="left">
-            <h1>Address:</h1>
-          </Slide>
-          <Slide direction="left">
-            <p>1030 Southwood Dr San Luis Obispo, California(CA), 93401</p>
-          </Slide> */}
         </div>
         <div className="links">
           <Slide direction="left">
             <h1>Contact me directly:</h1>
           </Slide>
-          {/* <div>
-            <span>
-              <FiPhoneCall />
-            </span>
-            <Slide direction="left">
-              <a href="tel:+4733378901">+47 333 78 901</a>
-            </Slide>
-          </div> */}
           <div>
             <Slide direction="left">
               <span>
@@ -182,7 +167,7 @@ const Footer = () => {
             </div>
             <button type="submit">Submit</button>
             {loading && <div style={{ textAlign: "center" }}>
-              <Spin spinning={loading} indicator={<IoIosSend />} delay={500} size="large" />
+              <Spin spinning={loading} delay={500} size="large" />
             </div>}
           </form>
         </Slide>

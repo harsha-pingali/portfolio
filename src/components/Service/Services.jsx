@@ -1,9 +1,6 @@
 import React from "react";
-import { MdDesignServices } from "react-icons/md";
-import { FiCodesandbox } from "react-icons/fi";
-import { FaReact, FaServer } from "react-icons/fa";
+import { FaServer } from "react-icons/fa";
 import { IoCodeSlashOutline } from "react-icons/io5";
-import { CgWebsite } from "react-icons/cg";
 import { TbCloudComputing } from "react-icons/tb";
 import styled from "styled-components";
 import Card from "./Card";
@@ -65,4 +62,6 @@ const Cards = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   margin-top: 4rem;
   gap: 1rem;
+  font-family:@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap')
+
 `;
