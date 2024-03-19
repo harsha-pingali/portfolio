@@ -45,9 +45,10 @@ const Footer = () => {
       })
       return;
     }
+    // console.log(process.env.REACT_APP_PUBLIC_KEY + " " + process.env.REACT_APP_SERVICE_ID);
     emailjs
-      .sendForm('service_ubbaavv', 'template_ovsqexk', '#emailform', {
-        publicKey: 'A7JzBNvez8QIKO3F0',
+      .sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, '#emailform', {
+        publicKey: process.env.REACT_APP_PUBLIC_KEY,
       })
       .then(
         () => {
@@ -77,6 +78,7 @@ const Footer = () => {
           theme: "light",
           type: "error",
         })
+        setLoading(false)
         console.log(err)
       })
     // sendMail(data);
