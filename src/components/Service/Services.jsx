@@ -1,7 +1,7 @@
 import React from "react";
 import { MdDesignServices } from "react-icons/md";
 import { FiCodesandbox } from "react-icons/fi";
-import { FaReact,FaServer } from "react-icons/fa";
+import { FaReact, FaServer } from "react-icons/fa";
 import { IoCodeSlashOutline } from "react-icons/io5";
 import { CgWebsite } from "react-icons/cg";
 import { TbCloudComputing } from "react-icons/tb";
@@ -22,25 +22,22 @@ const Services = () => {
         <Slide direction="left">
           <Card
             Icon={IoCodeSlashOutline}
-            title={"FrontEnd Development"}
-            disc={`Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
+            title={"Frontend Development"}
+            disc={'I specialize in crafting user interfaces using technologies such as HTML, CSS, and React.js, combining them with frameworks like Chakra UI, Bootstrap, and Ant Design to optimize and build highly responsive interfaces for enhanced user experiences, ensuring seamless interaction across all devices.'}
           />
         </Slide>
         <Slide direction="up">
           <Card
             Icon={FaServer}
             title={"Backend Development"}
-            disc={`Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
+            disc={`I create robust and efficient backend APIs using backend frameworks such as Express.js and Spring Boot, along with databases like MongoDB and MySQL. Additionally, I integrate popular server-side libraries to implement security and various other services to enhance the functionality of the backend systems.`}
           />
         </Slide>
         <Slide direction="right">
           <Card
             Icon={TbCloudComputing}
             title={"Cloud Computing & Devops"}
-            disc={`Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
+            disc={`I harness the power of various AWS services to innovate, deploy, and manage both new and existing services. My focus lies in utilizing AWS Lambda, API Gateway, DynamoDB, and other machine learning services to provide Backend as a Service (BaaS) solutions, delivering exceptional value to end users.`}
           />
         </Slide>
       </Cards>

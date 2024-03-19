@@ -6,7 +6,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { Slide } from "react-awesome-reveal";
 import { IoDocumentText } from "react-icons/io5";
 import { BsInstagram } from "react-icons/bs";
-import { BsGithub,BsLinkedin } from "react-icons/bs";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
 const ProfComponent = () => {
   return (
     <Container id="home">
@@ -18,27 +18,28 @@ const ProfComponent = () => {
           <h1 className="green">Sai Harsha</h1>
           <h3>Web Developer and Cloud Computing Enthusiast</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
-            iusto. Adipisci in qui officia provident tenetur sequi, deserunt
-            corporis quos?
+            Hello, I'm Sai Harsha, and I'm deeply passionate about both web development and cloud computing. My enthusiasm lies in applying theoretical knowledge to real-world applications in these fields. I'm eager to bridge the gap between theory and practice by actively engaging in hands-on projects.Currently I am looking for oppertunities to showcase my skills
           </p>
-          <button>View My Resume <IoDocumentText style={{fontSize:"20px"}}/> </button>
+
+          <a href="https://drive.google.com/file/d/1WyYoVCCrXOWTW53ixUU6GVKFBc2hIRfj/view?usp=drive_link" target="_blank">
+            <button>View My Resume <IoDocumentText style={{ fontSize: "20px" }} /> </button>
+          </a>
           <Social>
             <p>Check out my</p>
             <div className="social-icons">
               <span>
-                <a href="/">
-                  <BsLinkedin style={{fontSize:'1.5rem'}}/>
+                <a href="https://www.linkedin.com/in/sai-harsha-pingali/">
+                  <BsLinkedin style={{ fontSize: '1.5rem' }} />
                 </a>
               </span>
               <span>
-                <a href="/">
-                  <BsGithub style={{fontSize:'1.5rem'}}/>
+                <a href="https://github.com/harsha-pingali">
+                  <BsGithub style={{ fontSize: '1.5rem' }} />
                 </a>
               </span>
               <span>
-                <a href="/">
-                  <BsInstagram style={{fontSize:'1.5rem'}}/>
+                <a href="https://www.instagram.com/sai_harsha.exe/">
+                  <BsInstagram style={{ fontSize: '1.5rem' }} />
                 </a>
               </span>
             </div>
@@ -94,6 +95,7 @@ const Texts = styled.div`
   }
   p {
     font-weight: 300;
+    line-height:1.5
   }
 
   button {
