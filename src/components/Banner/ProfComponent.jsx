@@ -19,7 +19,7 @@ const ProfComponent = () => {
             Hello, I'm Sai Harsha, and I'm deeply passionate about both  <strong>web development</strong> and  <strong>cloud computing</strong>. My enthusiasm lies in applying theoretical knowledge to real-world applications in these fields. I'm eager to bridge the gap between theory and practice by actively engaging in hands-on projects. Currently I am looking for oppertunities to showcase my skills
           </p>
 
-          <a href="https://drive.google.com/file/d/1evDwtN1iH34uTWEb1-aXwc4GAhPl92DT/view?usp=sharing" target="_blank" rel="noreferrer">
+          <a href="https://drive.google.com/file/d/1WyYoVCCrXOWTW53ixUU6GVKFBc2hIRfj/view" target="_blank" rel="noreferrer">
             <button>View My Resume <IoDocumentText style={{ fontSize: "20px" }} /> </button>
           </a>
           <Social>
