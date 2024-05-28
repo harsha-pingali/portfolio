@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import styled from 'styled-components';
-import { GiCandleFlame } from "react-icons/gi";
-import { PiFinnTheHumanFill } from "react-icons/pi";
 import { GiNinjaHeroicStance } from "react-icons/gi";
 const Header = () => {
     const [bar, setBar] = useState(false);
+     const handleNavClick = () => {
+        setBar(false);
+    };
     return (
         <Container bar={bar}>
             <Logo>
@@ -12,12 +13,12 @@ const Header = () => {
                 <h1>Sai Harsha</h1>
             </Logo>
             <Nav bar={bar}>
-                <span><a href="#home">Home</a></span>
-                <span><a href="#skills">Skills</a></span>
-                <span><a href="#tools">Tools</a></span>
-                <span><a href="#project">Projects</a></span>
-                <span><a href="#certifications">Certifications</a></span>
-                <span><a href="#footer">Contact Me</a></span>
+                <span><a href="#home" onClick={handleNavClick}>Home</a></span>
+                <span><a href="#skills" onClick={handleNavClick}>Skills</a></span>
+                <span><a href="#tools" onClick={handleNavClick}>Tools</a></span>
+                <span><a href="#project" onClick={handleNavClick}>Projects</a></span>
+                <span><a href="#certifications" onClick={handleNavClick}>Certifications</a></span>
+                <span><a href="#footer" onClick={handleNavClick}>Contact Me</a></span>
             </Nav>
             <div
                 onClick={() => setBar(!bar)}
